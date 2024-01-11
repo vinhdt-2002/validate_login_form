@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: "Poppins";
+}
+.login-page {
+    background-image: linear-gradient(to right bottom, #769291, #759b9b, #73a5a5, #70aeaf, #6db8ba, #70bdbe, #73c2c3, #76c7c7, #81c9c6, #8bcac6, #94ccc6, #9dcdc6);    height: 100vh;
+    width: 100%;
+}
+
+.page-body-login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.login-info-frame {
+    height: 100%;
+}
+
+
+.text-login {
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin: 40% 0 5% 10%;
+}
+
+.text-login-2 {
+    font-size: 15px;
+    line-height: 1;
+    margin-left: 10%;
+}
+
+
+.login-section {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-section .form-box h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-box .input-box {
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid#fff;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label {
+    top: -5px;
+}
+
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.remember-password {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-password a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-password a:hover {
+    color: #fff;
+
+    text-decoration: underline;
+}
+
+.button-login {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dafffb99;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.create-account {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+
+.create-account p a,
+.create-account a {
+    color: #fff;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.create-account p a:hover,
+.create-account a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.login {
+    transform: translateX(0px);
+    transition: transform .6s ease;
+    transition-delay: 0.7s;
+}
+
+.register {
+    transform: translateX(0px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+
+.forget {
+    transform: translateY(-300%);
+    transition: transform .6s ease;
+    transition-delay: 0.7s;
+}
+
+.login.change {
+    transform: translateX(150%);
+    transition-delay: 0.7s;
+}
+
+.register.change {
+    transform: translateY(-100%);
+    transition-delay: 0.7s;
+}
+
+.forget.change {
+    transform: translateY(-200%);
+    transition-delay: 0.7s;
+}
+
+.form-group.invalid .form-message {
+    color: #aa1931;
+}
